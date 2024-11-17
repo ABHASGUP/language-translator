@@ -1,0 +1,20 @@
+<GridLayout rows="auto, *" class="page p-16">
+    <Label text="Your Learning Path" class="h1 text-center" row="0" />
+    <ScrollView row="1">
+        <StackLayout>
+            <Repeater items="{{ lessons }}">
+                <GridLayout columns="*, auto" class="lesson-card m-8 p-16">
+                    <StackLayout col="0">
+                        <Label text="{{ title }}" class="h2" />
+                        <Label text="{{ description }}" class="body" textWrap="true" />
+                        <GridLayout columns="auto, *" class="m-t-8">
+                            <Label text="Level {{ level }}" class="level-badge" col="0" />
+                            <Label text="{{ xp }} XP" class="xp-badge" col="1" horizontalAlignment="right" />
+                        </GridLayout>
+                    </StackLayout>
+                    <Label text="{{ completed ? '🏆' : '📚' }}" class="text-right" col="1" />
+                </GridLayout>
+            </Repeater>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

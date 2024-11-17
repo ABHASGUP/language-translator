@@ -1,0 +1,79 @@
+.page {
+    background-color: #f3f4f6;
+}
+
+.action-bar {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.language-card {
+    background-color: white;
+    border-radius: 12;
+    elevation: 4;
+    width: 45%;
+}
+
+.lesson-card {
+    background-color: white;
+    border-radius: 12;
+    elevation: 4;
+}
+
+.level-badge {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    padding: 4 8;
+    border-radius: 16;
+    font-size: 12;
+}
+
+.xp-badge {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    padding: 4 8;
+    border-radius: 16;
+    font-size: 12;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 12;
+    elevation: 4;
+    padding: 16;
+}
+
+.stat-card {
+    background-color: #e0e7ff;
+    border-radius: 12;
+    padding: 16;
+    margin: 8;
+}
+
+.stat-icon {
+    font-size: 24;
+    text-align: center;
+}
+
+.stat-label {
+    color: #4f46e5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24;
+    font-weight: bold;
+    text-align: center;
+    color: #4f46e5;
+}
+
+.streak-icon {
+    font-size: 20;
+}
+
+.streak-text {
+    font-size: 16;
+    font-weight: bold;
+    margin-left: 4;
+}

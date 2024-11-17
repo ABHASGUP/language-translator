@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="LinguaQuest" class="action-bar">
+    </ActionBar>
+    
+    <BottomNavigation selectedIndex="{{ selectedIndex }}">
+        <TabStrip>
+            <TabStripItem>
+                <Label text="Languages" />
+                <Image src="font://&#xf0ac;" class="fas t-36" />
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="Lessons" />
+                <Image src="font://&#xf11b;" class="fas t-36" />
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="Profile" />
+                <Image src="font://&#xf007;" class="fas t-36" />
+            </TabStripItem>
+        </TabStrip>
+
+        <TabContentItem>
+            <languages-page />
+        </TabContentItem>
+        <TabContentItem>
+            <lessons-page />
+        </TabContentItem>
+        <TabContentItem>
+            <profile-page />
+        </TabContentItem>
+    </BottomNavigation>
+</Page>

@@ -1,0 +1,13 @@
+<GridLayout rows="auto, *" class="page p-16">
+    <Label text="Choose Your Language" class="h1 text-center" row="0" />
+    <ScrollView row="1">
+        <WrapLayout>
+            <Repeater items="{{ languages }}">
+                <StackLayout tap="{{ onLanguageSelect }}" class="language-card m-8 p-16">
+                    <Label text="{{ flag }}" class="text-center" style="font-size: 48" />
+                    <Label text="{{ name }}" class="h2 text-center" />
+                </StackLayout>
+            </Repeater>
+        </WrapLayout>
+    </ScrollView>
+</GridLayout>

@@ -1,0 +1,25 @@
+<ScrollView class="page p-16">
+    <StackLayout class="profile-card">
+        <GridLayout columns="*, auto" class="m-b-16">
+            <Label text="{{ user.name }}" class="h1" col="0" />
+            <StackLayout orientation="horizontal" col="1">
+                <Label text="🔥" class="streak-icon" />
+                <Label text="{{ user.streak }} days" class="streak-text" />
+            </StackLayout>
+        </GridLayout>
+
+        <GridLayout columns="*, *" rows="auto" class="stats-grid">
+            <StackLayout class="stat-card" col="0">
+                <Label text="⭐" class="stat-icon" />
+                <Label text="Level" class="stat-label" />
+                <Label text="{{ user.level }}" class="stat-value" />
+            </StackLayout>
+            
+            <StackLayout class="stat-card" col="1">
+                <Label text="🏆" class="stat-icon" />
+                <Label text="XP" class="stat-label" />
+                <Label text="{{ user.xp }}" class="stat-value" />
+            </StackLayout>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>
